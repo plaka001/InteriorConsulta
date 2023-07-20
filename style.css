@@ -11,10 +11,112 @@ li {
   list-style: none;
 }
 
+header {
+  display: flex;
+}
+
+.btnHeader {
+  background: #181719;
+  color: #fff;
+  font-family: Crimson Pro;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  flex-shrink: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.content-tittle {
+  color: #fff;
+  font-family: Lora;
+  font-style: normal;
+  line-height: normal;
+}
+
+.content-data {
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+}
+
+.content-read-more a {
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card {
+  position: relative;
+  flex-shrink: 0;
+  background: #181719;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-header {
+  display: flex;
+  gap: 10px;
+}
+
+.card-header-data h3 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-header-data h4 {
+  color: #828282;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card h2 {
+  color: #fff;
+  font-family: Lora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer span a {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 /* Media query para dispositivos móviles */
 @media only screen and (max-width: 767px) {
   header {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 20px;
@@ -22,18 +124,12 @@ li {
   }
 
   .btnHeader {
-    background: #181719;
-    color: #fff;
-    font-family: Crimson Pro;
     font-size: 14px;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
-    text-transform: uppercase;
     width: 133px;
     height: 41px;
-    flex-shrink: 0;
-    border: 1px solid #fff;
   }
 
   .hamburger {
@@ -142,10 +238,7 @@ li {
 
   main {
     gap: 30px;
-    height: 100%;
-    align-items: center;
     justify-content: space-between;
-    display: flex;
     flex-direction: column;
     margin: 0 20px 0 8px;
   }
@@ -159,22 +252,14 @@ li {
   }
 
   .content-tittle {
-    color: #fff;
-    font-family: Lora;
     font-size: 36px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
   }
 
   .content-data {
     width: 250px;
-    color: #fff;
-    font-family: Montserrat;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
   }
 
   .content-read-more {
@@ -187,61 +272,26 @@ li {
   }
 
   .content-read-more a {
-    color: #fff;
-    font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
   }
 
   /* fin section 1 stylos */
 
   /* section 2 stylos */
 
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
   .section2-img1 {
     width: 391.06px;
     height: 279.338px;
     flex-shrink: 0;
   }
+
   .card {
-    position: relative;
     bottom: 38px;
     right: 17px;
     padding: 15px;
     width: 300px;
     height: 158px;
-    flex-shrink: 0;
-    background: #181719;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  .card-header {
-    display: flex;
-    gap: 10px;
-  }
-
-  .card-header-data h3 {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  .card-header-data h4 {
-    color: var(--gray-3, #828282);
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
   }
 
   .section2-img2 {
@@ -251,55 +301,27 @@ li {
     border-radius: 50%;
   }
 
-  .card h2 {
-    color: #fff;
-    font-family: Lora;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
   /* fin section 2 stylos */
-
-  /* footer */
-  footer span a {
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    line-height: normal;
-    color: #bdbdbd;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration-line: underline;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-  }
-  /* fin footer */
 }
 
 /* Media query para dispositivos de escritorio */
 @media only screen and (min-width: 768px) {
   /* header stylos */
 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+  }
+
   .btnHeader {
     width: 102px;
     height: 32px;
-    flex-shrink: 0;
-    background-color: #181719;
-    border-color: white;
-    color: #fff;
-    font-family: Crimson Pro;
     font-size: 14px;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
-    text-transform: uppercase;
   }
 
   li a {
@@ -322,11 +344,6 @@ li {
     line-height: normal;
   }
 
-  .header {
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
   .hamburger {
     display: none;
   }
@@ -343,12 +360,10 @@ li {
   /* section 1 stylos */
 
   main {
-    height: 100%;
-    align-items: center;
     justify-content: space-between;
-    display: flex;
     margin: 0 88px 0 35px;
   }
+
   .section1 {
     display: flex;
     flex-direction: column;
@@ -357,22 +372,14 @@ li {
   }
 
   .content-tittle {
-    color: #fff;
-    font-family: Lora;
     font-size: 48px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
   }
 
   .content-data {
     width: 410px;
-    color: #fff;
-    font-family: Montserrat;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
   }
 
   .content-read-more {
@@ -385,61 +392,26 @@ li {
   }
 
   .content-read-more a {
-    color: #fff;
-    font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
   }
 
   /* fin section 1 stylos */
 
   /* section 2 stylos */
 
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
   .section2-img1 {
     width: 821.114px;
     height: 586.531px;
     flex-shrink: 0;
   }
+
   .card {
-    position: relative;
     bottom: 85px;
     right: 40px;
     padding: 15px;
     width: 410px;
     height: 189px;
-    flex-shrink: 0;
-    background: #181719;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  }
-  .card-header {
-    display: flex;
-    gap: 10px;
-  }
-
-  .card-header-data h3 {
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  .card-header-data h4 {
-    color: var(--gray-3, #828282);
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
   }
 
   .section2-img2 {
@@ -449,34 +421,5 @@ li {
     border-radius: 50%;
   }
 
-  .card h2 {
-    color: #fff;
-    font-family: Lora;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
   /* fin section 2 stylos */
-
-  /* footer */
-  footer span a {
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    line-height: normal;
-    color: #bdbdbd;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration-line: underline;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-  }
-  /* fin footer */
 }
