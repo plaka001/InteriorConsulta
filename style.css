@@ -309,6 +309,7 @@ footer {
   /* header stylos */
 
   .header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 30px;
